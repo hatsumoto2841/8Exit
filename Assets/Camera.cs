@@ -1,0 +1,20 @@
+using UnityEngine;
+
+public class CameraFollow : MonoBehaviour
+{
+    public Transform target;
+
+    public Vector3 offset = new Vector3(0f, 5f, -10f);
+
+    private void LateUpdate()
+    {
+        if (target == null)
+        {
+            Debug.LogWarning("CameraFollow: target Ç™ê›íËÇ≥ÇÍÇƒÇ¢Ç‹ÇπÇÒÅB");
+            return;
+        }
+
+        // ÇªÇÃÇ‹Ç‹ë¶í«è]
+        transform.position = target.position + offset;
+    }
+}
