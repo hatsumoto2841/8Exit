@@ -29,12 +29,12 @@ public class Chara : MonoBehaviour
 
         if (Keyboard.current.aKey.isPressed)
         {
-            move = -1f;
+            move = -1.1f;
         }
 
         if (Keyboard.current.dKey.isPressed)
         {
-            move = 1f;
+            move = 1.1f;
         }
 
         if(Keyboard.current.spaceKey.isPressed)
